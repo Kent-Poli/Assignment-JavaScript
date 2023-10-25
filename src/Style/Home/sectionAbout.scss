@@ -1,0 +1,89 @@
+.about-company {
+    @media (min-width: 1200px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 112px;
+        column-gap: 120px;
+    }
+    .left-wrap {
+        display: none;
+        @media (min-width: 1200px) {
+            display: block;
+        }
+        @media (min-width: 1400px) {
+            display: block;
+            padding: 0 56px;
+        }
+
+        .label {
+            position: relative;
+            top: -210px;
+            left: -56px;
+            background-color: #beebff;
+            padding: 30px 20px;
+            width: 70%;
+
+            h4 {
+                font-family: "DM Sans", sans-serif;
+                font-weight: 700;
+
+                span {
+                    color: #f94d1c;
+                    font-family: "DM Sans", sans-serif;
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .right-wrap {
+        .title {
+            text-align: center;
+            margin-top: 50px;
+
+            @media (min-width: 1200px) {
+                text-align: left;
+            }
+
+            p {
+                padding: 0 100px;
+                @media (min-width: 1200px) {
+                    padding: 0;
+                }
+            }
+        }
+        .btn-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+            @media (min-width: 1200px) {
+                justify-content: left;
+            }
+
+            a {
+                text-decoration: none;
+            }
+            .btn-black {
+            }
+            .circel {
+                width: 48px;
+                height: 48px;
+                border: 1px solid black;
+                border-radius: 50px;
+                margin: 0 20px;
+            }
+            span {
+                margin-bottom: 0;
+            }
+            .span {
+                text-align: center;
+                color: white;
+            }
+            .span1 {
+                margin-bottom: 0;
+                color: black;
+            }
+        }
+    }
+}

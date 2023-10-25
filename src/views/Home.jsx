@@ -3,6 +3,8 @@ import Header from "../Components/Header";
 import SectionHero from "../HomeComponents/SectionHero";
 import SectionFeatures from "../HomeComponents/SectionFeatures";
 import SectionLogos from "../HomeComponents/SectionLogos/SectionLogos";
+import SectionAbout from "../HomeComponents/SectionAbout";
+import OurServices from "../HomeComponents/OurServices";
 
 const Home = () => {
   return (
@@ -12,6 +14,8 @@ const Home = () => {
         <SectionHero />
         <SectionLogos />
         <SectionFeatures />
+        <SectionAbout />
+        <OurServices />
       </main>
       <Footer />
     </>
