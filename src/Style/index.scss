@@ -3,7 +3,7 @@
     grid-template-rows: 1fr auto 1fr;
 }
 .title {
-    text-align: center;
+    text-align: left;
     span {
         display: inline-block;
         color: #f94d1c;
@@ -17,4 +17,9 @@
         font-weight: 700;
         margin-bottom: 43px;
     }
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
