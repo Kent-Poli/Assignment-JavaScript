@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-import "../assets/header.css";
+import "../Style/header.css";
 import Button from "./Button";
 
 const Header = () => {
@@ -47,7 +47,7 @@ const Header = () => {
             <NavLink to="news">News</NavLink>
             <NavLink to="/contact">Contact</NavLink>
           </nav>
-          <Button type="btn-yellow" color=" #f9d783" text="Login" />
+          <Button type="btn-yellow" width="122px" height="48px" text="Login" />
         </div>
       </div>
     </header>

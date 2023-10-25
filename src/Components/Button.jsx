@@ -1,12 +1,11 @@
-import "../assets/button.css";
+import "../Style/button.css";
 
-const Button = ({ type, color, text }) => {
+const Button = ({ href, type, width, height, text }) => {
+  const classes = `center ${type}`;
   return (
-    <a href="#" className={type} style={{ backgroundColor: color }}>
-      <button>
-        {text}
-        <i className="fa-solid fa-arrow-up-right"></i>
-      </button>
+    <a href={href} style={{ width: width, height: height }} className={classes}>
+      {text}
+      <i className="fa-solid fa-arrow-up-right"></i>
     </a>
   );
 };
