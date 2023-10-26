@@ -9,7 +9,6 @@ const SectionLogos = () => {
     "/images/Logo5.png",
   ];
 
-  console.log(imgs);
   return (
     <section className="logos container">
       {imgs.map((item, index) => (

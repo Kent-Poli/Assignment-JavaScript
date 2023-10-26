@@ -1,0 +1,86 @@
+.project-case-studies {
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+
+    @media (min-width: 992px) {
+        margin-bottom: 80px;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        column-gap: 20px;
+        grid-template-areas:
+            "title title"
+            "box1 box2"
+            "box3 box4"
+            "btn btn";
+
+        .title {
+            grid-area: title;
+        }
+        .box1 {
+            grid-area: box1;
+        }
+        .box2 {
+            grid-area: box2;
+        }
+        .box3 {
+            grid-area: box3;
+        }
+        .box4 {
+            grid-area: box4;
+        }
+        .btn {
+            grid-area: btn;
+
+            .btn-black {
+                width: 238px !important;
+            }
+        }
+    }
+
+    .title {
+        text-align: center;
+    }
+    .box {
+        margin-bottom: 50px;
+        a {
+            img {
+                margin-bottom: 30px;
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+        h3 {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #c4c4c4;
+            text-align: center;
+            @media (min-width: 992px) {
+                text-align: start;
+            }
+        }
+        .btn-wrap {
+            display: flex;
+            justify-content: end;
+            .btn-trans {
+                border: none;
+                // width: 124px;
+                // height: 44px;
+
+                &:hover {
+                    background-color: #f2f2f2;
+                    border: none;
+                    transition: 0.3s;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .btn {
+        width: 100%;
+        margin-top: 60px;
+        .btn-black {
+            width: 300px;
+        }
+    }
+}

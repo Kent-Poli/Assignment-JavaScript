@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-color: #f0efe9;
 }
@@ -125,24 +126,33 @@ header .container .down-wrap nav {
     z-index: 10;
   }
 }
-header .container .down-wrap nav a {
+header .container .down-wrap nav li {
+  list-style: none;
+}
+header .container .down-wrap nav li a {
   text-decoration: none;
   color: #191919;
   margin-right: 34px;
 }
 @media (max-width: 1200px) {
-  header .container .down-wrap nav a {
+  header .container .down-wrap nav li a {
     margin-right: 0px;
     color: rgb(0, 0, 0);
     padding: 50px;
   }
 }
 header .container .down-wrap nav .active {
-  border-bottom: 2px solid black;
-  display: inline-flex;
-  justify-content: center;
-  line-height: 1.4;
-  width: 7%;
+  position: relative;
+  text-decoration: none;
+}
+header .container .down-wrap nav .active::after {
+  content: "";
+  position: absolute;
+  width: 50%; /* Längd på strecket - 50% av länkens bredd */
+  height: 2px; /* Tjocklek på strecket */
+  background-color: #000; /* Färg på strecket */
+  bottom: -2px;
+  left: 25%; /* Centrerar strecket genom att dra den 25% från vänsterkanten */
 }
 header .container .down-wrap .btn-yellow {
   display: none;

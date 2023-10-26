@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import "../Style/header.css";
 import Button from "./Button";
+import Links from "./Links";
 
 const Header = () => {
   return (
@@ -22,9 +23,7 @@ const Header = () => {
               STOCKHOLM
             </div>
           </div>
-          {/* <a id="btn" href="#">
-            < className="fa-regular fa-bars-staggeredNavLink to
-          </a> */}
+
           <div className="social-wrap">
             <a href="/index.html">
               <i className="fa-brands fa-facebook"></i>
@@ -42,10 +41,7 @@ const Header = () => {
         </div>
         <div className="down-wrap center">
           <nav id="nav1">
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="service">Service</NavLink>
-            <NavLink to="news">News</NavLink>
-            <NavLink to="/contact">Contact</NavLink>
+            <Links />
           </nav>
           <Button type="btn-yellow" width="122px" height="48px" text="Login" />
         </div>

@@ -115,33 +115,41 @@ header {
 
                     z-index: 10;
                 }
-                a {
-                    text-decoration: none;
-                    color: #191919;
-                    margin-right: 34px;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: #191919;
+                        margin-right: 34px;
 
-                    @media (max-width: 1200px) {
-                        margin-right: 0px;
-                        color: rgb(0, 0, 0);
-                        padding: 50px;
+                        @media (max-width: 1200px) {
+                            margin-right: 0px;
+                            color: rgb(0, 0, 0);
+                            padding: 50px;
+                        }
                     }
                 }
-                // .active::after {
-                //     text-decoration: underline;
-                //     content: ""; /* Lägg till ett pseudo-element */
-                //     position: absolute;
-                //     bottom: 7px; /* Justera avståndet från texten (kan ändras efter behov) */
-                //     left: 10px;
-                //     width: 2%;
-                //     height: 2px; /* Höjden på understrecket */
-                //     background-color: rgb(27, 27, 27); /* Färgen på understrecket */
+
+                // .active {
+                //     border-bottom: 2px solid black;
+                //     display: inline-block;
+
+                //     line-height: 1.4;
+                //     width: 15%;
                 // }
                 .active {
-                    border-bottom: 2px solid black;
-                    display: inline-flex;
-                    justify-content: center;
-                    line-height: 1.4;
-                    width: 7%;
+                    position: relative;
+                    text-decoration: none;
+                }
+
+                .active::after {
+                    content: "";
+                    position: absolute;
+                    width: 50%; /* Längd på strecket - 50% av länkens bredd */
+                    height: 2px; /* Tjocklek på strecket */
+                    background-color: #000; /* Färg på strecket */
+                    bottom: -2px;
+                    left: 25%; /* Centrerar strecket genom att dra den 25% från vänsterkanten */
                 }
             }
             .btn-yellow {

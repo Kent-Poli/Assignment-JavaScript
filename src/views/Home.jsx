@@ -6,6 +6,7 @@ import SectionLogos from "../HomeComponents/SectionLogos/SectionLogos";
 import SectionAbout from "../HomeComponents/SectionAbout";
 import OurServices from "../HomeComponents/OurServices";
 import SectionChooseUs from "../HomeComponents/SectionChooseUs";
+import SectionCase from "../HomeComponents/SectionCase";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <SectionAbout />
         <OurServices />
         <SectionChooseUs />
+        <SectionCase />
       </main>
       <Footer />
     </>
