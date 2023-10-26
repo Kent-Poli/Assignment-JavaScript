@@ -29,12 +29,8 @@
         .box4 {
             grid-area: box4;
         }
-        .btn {
+        .btn-yellow {
             grid-area: btn;
-
-            .btn-black {
-                width: 238px !important;
-            }
         }
     }
 
@@ -58,29 +54,6 @@
             @media (min-width: 992px) {
                 text-align: start;
             }
-        }
-        .btn-wrap {
-            display: flex;
-            justify-content: end;
-            .btn-trans {
-                border: none;
-                // width: 124px;
-                // height: 44px;
-
-                &:hover {
-                    background-color: #f2f2f2;
-                    border: none;
-                    transition: 0.3s;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-    .btn {
-        width: 100%;
-        margin-top: 60px;
-        .btn-black {
-            width: 300px;
         }
     }
 }
