@@ -1,0 +1,82 @@
+.testimonial {
+    padding-top: 30px;
+
+    padding-bottom: 100px;
+
+    .container {
+        background-color: white;
+        padding: 0 100px;
+        min-width: 80%;
+        .box {
+            margin-top: 30px;
+            padding: 20px 20px;
+            // margin: 30px 40px;
+            .star-wrap {
+                text-align: center;
+                margin-bottom: 32px;
+            }
+            p {
+                text-align: center;
+                padding: 0 50px;
+            }
+            .person-wrap {
+                .text-wrap {
+                    padding-left: 17px;
+                    h3 {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    .span-text {
+                        color: #f94d1c;
+                    }
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+            margin-top: 90px;
+            .btn-black {
+                width: 300px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            padding-top: 130px;
+            .box-wrap {
+                display: flex;
+                gap: 40px;
+                .box {
+                    border: none !important;
+                    .star-wrap {
+                        text-align: left;
+                        display: flex;
+                        .fa-sharp {
+                            color: #f94d1c;
+                        }
+                    }
+                    p {
+                        text-align: left;
+                        padding: 0;
+                        padding-right: 30px;
+                    }
+                    .person-wrap {
+                        margin-top: 35px;
+                        justify-content: left;
+                    }
+                }
+            }
+            .btn .btn-black {
+                width: 181px;
+            }
+        }
+        @media (min-width: 992px) {
+            padding-bottom: 120px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        background-color: #f0d082;
+        padding-top: 67px;
+        padding-bottom: 100px;
+    }
+}

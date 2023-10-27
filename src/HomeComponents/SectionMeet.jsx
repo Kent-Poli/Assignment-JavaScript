@@ -13,16 +13,7 @@ const SectionMeet = () => {
           height="56px"
           text="Browse Team"
         />
-        {/* <div className="title">
-          <span className="span-text">Meet Our Team</span>
-          <h2>Experience Team Members</h2>
-        </div> */}
-        {/* <a href="#" className="btn">
-          <button className="btn-yellow">
-            Browse Team
-            <i className="fa-solid fa-arrow-up-right span"></i>
-          </button>
-        </a> */}
+
         <ContentBoxMeet
           type="box1 box"
           src="/images/Image8.png"

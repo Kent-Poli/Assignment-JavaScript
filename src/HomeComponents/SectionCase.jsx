@@ -14,13 +14,22 @@ const SectionCase = () => {
         <ContentBoxCase img="/images/Image4.png" h3="Grow your business" />
       </div>
       <div className="box2 box">
-        <ContentBoxCase img="/images/Image4.png" h3="Grow your business" />
+        <ContentBoxCase
+          img="/images/Image5.png"
+          h3="Why your client needs a responsive website"
+        />
       </div>
       <div className="box3 box">
-        <ContentBoxCase img="/images/Image4.png" h3="Grow your business" />
+        <ContentBoxCase
+          img="/images/Image6.png"
+          h3="Educate your employees to get better results"
+        />
       </div>
       <div className="box4 box">
-        <ContentBoxCase img="/images/Image4.png" h3="Grow your business" />
+        <ContentBoxCase
+          img="/images/Image7.png"
+          h3="Business Insights is a important piece of your business"
+        />
       </div>
       <Button
         type="btn-black btn"
@@ -28,12 +37,6 @@ const SectionCase = () => {
         height="56px"
         text="All Recent Projects"
       />
-      {/* <a href="#" className="btn">
-        <button className="btn-black">
-          All Recent Projects
-          <i className="fa-solid fa-arrow-up-right span"></i>
-        </button>
-      </a> */}
     </section>
   );
 };

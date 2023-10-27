@@ -9,7 +9,7 @@ const ContentBoxCase = ({ href, img, h3 }) => {
       <h3>{h3}</h3>
       <div className="under-line"></div>
       <div className="btn-wrap">
-        <Button type="btn-trans center" width="95px" text="Read More" />
+        <Button type="btn-trans center" width="" text="Read More" />
       </div>
     </>
   );
