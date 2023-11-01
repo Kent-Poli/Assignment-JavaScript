@@ -9,6 +9,7 @@ import SectionChooseUs from "../HomeComponents/SectionChooseUs";
 import SectionCase from "../HomeComponents/SectionCase";
 import SectionMeet from "../HomeComponents/SectionMeet";
 import SectionTest from "../HomeComponents/SectionTest";
+import SectionArticle from "../HomeComponents/SectionArticle";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <SectionCase />
         <SectionMeet />
         <SectionTest />
+        <SectionArticle />
       </main>
       <Footer />
     </>

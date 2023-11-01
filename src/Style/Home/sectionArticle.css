@@ -1,0 +1,94 @@
+.article-news .down-wrapper .box {
+  padding: 30px 40px;
+  flex-direction: column;
+}
+.article-news .down-wrapper .box .img-wrap {
+  position: relative;
+}
+.article-news .down-wrapper .box .img-wrap .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 20px;
+  background-color: #f0d082;
+  width: 56px;
+  height: 64px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.article-news .down-wrapper .box .img-wrap .date span {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0;
+}
+.article-news .down-wrapper .box .img-wrap .date p {
+  margin: 0;
+}
+.article-news .down-wrapper .box span {
+  margin: 20px 0;
+}
+.article-news .down-wrapper .box p {
+  text-align: center;
+  padding: 0 20px;
+}
+@media (min-width: 992px) {
+  .article-news {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+  .article-news .up-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .article-news .up-wrapper .title {
+    text-align: start;
+  }
+  .article-news .down-wrapper {
+    display: flex;
+  }
+  .article-news .down-wrapper .box {
+    padding: 10px;
+  }
+  .article-news .down-wrapper .box .img-wrap img {
+    width: 100%;
+  }
+  .article-news .down-wrapper .box .span {
+    margin: 20px 0;
+    text-align: start;
+    width: 100%;
+  }
+  .article-news .down-wrapper .box h3 {
+    text-align: start;
+    width: 100%;
+    padding-right: 45%;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+  .article-news .down-wrapper .box p {
+    text-align: start;
+    padding: 0px;
+    margin: 0;
+  }
+  .article-news .dot-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    -moz-column-gap: 14px;
+         column-gap: 14px;
+  }
+  .article-news .dot-wrap .dot {
+    background-color: #c4c4c4;
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+  }
+  .article-news .dot-wrap #dot2 {
+    background-color: #191919;
+  }
+  .article-news .dot-wrap #dot3 {
+    background-color: #c4ab6e;
+  }
+}

@@ -1,0 +1,115 @@
+.article-news {
+    .up-wrapper {
+        .title {
+            h2 {
+                // font-size: 20px;
+            }
+        }
+        .btn-wrap {
+        }
+    }
+    .down-wrapper {
+        .box {
+            padding: 30px 40px;
+            flex-direction: column;
+            .img-wrap {
+                position: relative;
+
+                .date {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    line-height: 20px;
+                    background-color: #f0d082;
+                    width: 56px;
+                    height: 64px;
+                    position: absolute;
+                    top: 20px;
+                    left: 20px;
+
+                    span {
+                        font-family: "DM Sans", sans-serif;
+                        font-size: 22px;
+                        font-weight: 700;
+                        margin: 0;
+                    }
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+            span {
+                margin: 20px 0;
+            }
+            h3 {
+            }
+            p {
+                text-align: center;
+                padding: 0 20px;
+            }
+        }
+    }
+
+    // article-news media 992px
+
+    @media (min-width: 992px) {
+        margin-top: 90px;
+        margin-bottom: 90px;
+
+        .up-wrapper {
+            display: flex;
+            justify-content: space-between;
+            .title {
+                text-align: start;
+            }
+        }
+        .down-wrapper {
+            display: flex;
+            .box {
+                padding: 10px;
+                .img-wrap {
+                    img {
+                        width: 100%;
+                    }
+                }
+                .span {
+                    margin: 20px 0;
+                    text-align: start;
+                    width: 100%;
+                }
+                h3 {
+                    text-align: start;
+                    width: 100%;
+                    padding-right: 45%;
+                    padding-bottom: 0;
+                    margin-top: 10px;
+                }
+                p {
+                    text-align: start;
+                    padding: 0px;
+                    margin: 0;
+                }
+            }
+        }
+        .dot-wrap {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            column-gap: 14px;
+
+            .dot {
+                background-color: #c4c4c4;
+                height: 12px;
+                width: 12px;
+                border-radius: 50px;
+            }
+            #dot2 {
+                background-color: #191919;
+            }
+            #dot3 {
+                background-color: #c4ab6e;
+            }
+        }
+    }
+}
